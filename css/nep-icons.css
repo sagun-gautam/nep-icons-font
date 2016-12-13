@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'nep-icons';
+	src:url('../fonts/nep-icon-fonts.eot');
+	src:url('../fonts/nep-icon-fonts.eot') format('embedded-opentype'),
+		url('../fonts/nep-icon-fonts.ttf') format('truetype'),
+		url('../fonts/nep-icon-fonts.woff') format('woff'),
+		url('../fonts/nep-icon-fonts.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.nep {
+	display: inline-block;
+	font-family: 'nep-icons';
+	speak: none;
+	font-size:auto;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height:1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.nep-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}
+.nep-2x{font-size:2em}
+.nep-3x{font-size:3em}
+.nep-4x{font-size:4em}
+.nep-5x{font-size:5em}
+.nep-fw{width:1.28571429em;text-align:center}
+
+.nep-bird:before{ content: '\EA01'}
+.nep-buddha:before{ content: '\EA02'}
+.nep-cloud:before{ content: '\EA03'}
+.nep-country-symbol:before{ content: '\EA04'}
+.nep-cow:before{ content: '\EA05'}
+.nep-dove:before{ content: '\EA06'}
+.nep-eye:before{ content: '\EA07'}
+.nep-flag:before{ content: '\EA08'}
+.nep-flower:before{ content: '\EA09'}
+.nep-khukuri-cross:before{ content: '\EA0A'}
+.nep-khukuri:before{ content: '\EA0B'}
+.nep-map:before{ content: '\EA0C'}
+.nep-moon:before{ content: '\EA0D'}
+.nep-om:before{ content: '\EA0E'}
+.nep-star:before{ content: '\EA0F'}
+.nep-stupa:before{ content: '\EA10'}
+.nep-sun:before{ content: '\EA11'}
