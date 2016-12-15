@@ -5,10 +5,10 @@
   <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/nep-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/nep-icons.min.css">
     <style type="text/css">
         body{background: #efefef}
-        .main-container {background:#fff;padding: 0px;}
+        .main-container {background:#fff;padding: 0px;box-shadow: 0px 0px 10px #888888;}
         .icon-container { margin-top: 10%;}
         .row{text-align: center;} .col-sm-3{padding: 15px; min-height: 150px;}
         code {font-size: 70%; font-family: monospace;}
@@ -18,10 +18,11 @@
         .navbar-brand i.nep {font-size: 20px; vertical-align: top;}
         .red{color: #d40404!important}
         .navbar-collapse{padding-right: 15px!important;}
+        .btn-lg { margin-left: 10px;}
         .page-header {margin-top: 15px;}
         .middle{vertical-align: middle;}
         code.guide{font-size: 16px;}
-        footer.footer{margin-top: 50px; padding: 15px;}
+        footer.footer{margin-top: 50px; padding: 15px; background: #efefef;margin-left: -15px; margin-right: -15px;}
         footer.footer p{font-weight: 500;}
     </style>
   </head>
@@ -54,13 +55,15 @@
 
         <div id="icons" class="icon-container container">
 
+          <a class="btn btn-default btn-lg pull-right" href="https://github.com/gudboisgn/nep-icons-font"><i class="glyphicon glyphicon-star"></i> GitHub</a>
+          <a class="btn btn-default btn-lg pull-right" href="https://github.com/gudboisgn/nep-icons-font/archive/master.zip"><i class="glyphicon glyphicon-download-alt"></i> Download</a>
 
           <div class="page-header" id="usage">
               <h2>Usage <small> (Implementation Guide) </small></h2>
           </div>
           <div class="row">
               <div class="col-md-12" style="padding-bottom:20px; text-align:left;">
-                  <code class="guide"> &lt;i class="nep nep-flag"&gt;&lt;/i&gt; </code>
+                  <code class="guide" style="margin-left:15px;"> &lt;i class="nep nep-flag"&gt;&lt;/i&gt; </code><br/>
               </div>
           </div>
           <div class="row">
