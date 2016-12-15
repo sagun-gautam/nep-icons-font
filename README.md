@@ -8,7 +8,7 @@ Spin animation can applied easily using spin-(x/y/z) class.
 
 Created by [Sagun Gautam](https://twitter.com/gudboisgn).
 
-Get started at ##http://www.sagungautam.com.np/nepali-icon-fonts/
+Demo & Get started at ##http://www.sagungautam.com.np/nepali-icon-fonts/
 
 
 ## Author
