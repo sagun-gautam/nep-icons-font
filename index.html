@@ -7,63 +7,329 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/nep-icons.css">
     <style type="text/css">
-    .row{text-align: center;} .col-sm-3{padding: 15px; margin-top:20px; margin-bottom: 20px;}
-    code { font-family: monospace;}
+        body{background: #efefef}
+        .main-container {background:#fff;padding: 0px;}
+        .icon-container { margin-top: 10%;}
+        .row{text-align: center;} .col-sm-3{padding: 15px; min-height: 150px;}
+        code {font-size: 70%; font-family: monospace;}
+        h2 small{ font-size: 50%;}
+        .navbar {padding:10px; border-radius: 0px;}
+        .navbar-brand { font-size: 20px;}
+        .navbar-brand i.nep {font-size: 20px; vertical-align: top;}
+        .red{color: #d40404!important}
+        .navbar-collapse{padding-right: 15px!important;}
+        .page-header {margin-top: 15px;}
+        .middle{vertical-align: middle;}
+        code.guide{font-size: 16px;}
+        footer.footer{margin-top: 50px; padding: 15px;}
+        footer.footer p{font-weight: 500;}
     </style>
   </head>
   <body>
-    <div id="icons" class="container">
-      <div class="row">
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-flag nep-4x"></i>
-            <code>&lt;i class="nep nep-flag"&gt;&lt;/i&gt;</code>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-country-symbol nep-4x"></i>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-map nep-4x"></i>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-bird nep-4x"></i>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-flower nep-4x"></i>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-cow nep-4x"></i>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-eye nep-4x"></i>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-khukuri nep-4x"></i>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-khukuri-cross nep-4x"></i>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-buddha nep-4x"></i>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-stupa nep-4x"></i>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-om nep-4x"></i>
-        </div>   
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-moon nep-4x"></i>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-sun nep-4x"></i>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-star nep-4x"></i>
-        </div>
-        <div class="col-sm-3 col-md-2">
-            <i class="nep nep-cloud nep-4x"></i>
-        </div>    
-      </div>
-    </div>
+    <div class="container main-container">
+        <nav class="container navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nep-icon-menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand red" href="#"><i class="nep nep-flag nep-2x"></i> Nep Icon Font</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="nep-icon-menu">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="#general">General Icons</a></li>
+                <li><a href="#banking">Banking Icons</a></li>
+                <li><a href="#adventure">Adventure Icons</a></li>
+                <li><a href="#transport">Transport Icons</a></li>
+                <li><a href="#loader">Loader Icons</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+        <div id="icons" class="icon-container container">
+
+
+          <div class="page-header" id="usage">
+              <h2>Usage <small> (Implementation Guide) </small></h2>
+          </div>
+          <div class="row">
+              <div class="col-md-12" style="padding-bottom:20px; text-align:left;">
+                  <code class="guide"> &lt;i class="nep nep-flag"&gt;&lt;/i&gt; </code>
+              </div>
+          </div>
+          <div class="row">
+                <div class="col-sm-3 col-md-2">
+                    <span class="nep nep-flag nep-lg"></span><br/>
+                    <code class="guide">.nep-lg</code>
+                </div>
+
+                <div class="col-sm-3 col-md-2">
+                    <span class="nep nep-flag nep-2x"></span><br/>
+                    <code class="guide">.nep-2x</code>
+                </div>
+
+                <div class="col-sm-3 col-md-2">
+                    <span class="nep nep-flag nep-3x"></span><br/>
+                    <code class="guide">.nep-3x</code>
+                </div>
+
+
+                <div class="col-sm-3 col-md-2">
+                    <span class="nep nep-flag nep-4x"></span><br/>
+                    <code class="guide">.nep-4x</code>
+                </div>
+
+                <div class="col-sm-3 col-md-2">
+                    <span class="nep nep-flag nep-5x"></span><br/>
+                    <code class="guide">.nep-5x</code>
+                </div>
+          </div>
+
+
+
+
+          <div class="page-header" id="general">
+             <h2>General Icons <small>(Total 17 icons)</small></h2>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-flag nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-flag"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-country-symbol nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-country-symbol"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-map nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-map"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-bird nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-bird"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-flower nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-flower"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-cow nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-cow"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-dove nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-dove"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-eye nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-eye"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-khukuri nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-khukuri"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-khukuri-cross nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-khukuri-cross"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-buddha nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-buddha"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-stupa nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-stupa"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-om nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-om"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-moon nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-moon"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-sun nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-sun"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-star nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-star"&gt;&lt;/i&gt;</code>
+            </div>
+            <div class="col-sm-3 col-md-2">
+                <i class="nep nep-cloud nep-4x"></i><br/>
+                <code>&lt;i class="nep nep-cloud"&gt;&lt;/i&gt;</code>
+            </div>
+          </div>
+
+
+            <div class="page-header" id="banking">
+              <h2>Banking & Finance <small>(Total 10 icons)</small></h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-ebl nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-ebl"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-gibl nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-gibl"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-jbnl nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-jbnl"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-mbl nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-mbl"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-kumaribl nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-kumaribl"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-nibl nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-nibl"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-prabhubl nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-prabhubl"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-sanimabl nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-sanimabl"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-sbibl nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-sbibl"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-sbl nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-sbl"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-scb nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-scb"&gt;&lt;/i&gt;</code>
+                </div>
+          </div>
+
+          <div class="page-header" id="adventure">
+              <h2>Adventures <small>(Total 6 icons)</small></h2>
+          </div>
+          <div class="row">
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-rafting nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-rafting"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-kayaking nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-kayaking"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-bungee nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-bungee"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-paragliding nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-paragliding"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-trekking nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-trekking"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-cycling nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-cycling"&gt;&lt;/i&gt;</code>
+                </div>
+          </div>
+
+          <div class="page-header" id="transport">
+              <h2>Transport <small>(Total 4 icons)</small></h2>
+          </div>
+          <div class="row">
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-flight nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-flight"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-bike nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-bike"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-car nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-car"&gt;&lt;/i&gt;</code>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <i class="nep nep-bus nep-4x"></i><br/>
+                    <code>&lt;i class="nep nep-bus"&gt;&lt;/i&gt;</code>
+                </div>
+          </div>
+
+          <div class="page-header" id="loader">
+              <h2>Loader / Spin <small> Spin(x, y, z) Any Icon</small></h2>
+          </div>
+          <div class="row">
+                <div class="col-sm-3 col-md-2">
+                    <span class="nep-loader-circle"></span><br/>
+                    <code>&lt;i class="nep-loader-circle"&gt;&lt;/i&gt;</code>
+                </div>
+
+                <div class="col-sm-3 col-md-2">
+                    <span class="nep-loader-arrow"></span><br/>
+                    <code>&lt;i class="nep-loader-arrow"&gt;&lt;/i&gt;</code>
+                </div>
+
+                <div class="col-sm-3 col-md-2">
+                    <span class="nep nep-gibl nep-4x spin-x"></span><br/>
+                    <code>&lt;i class="nep nep-gibl spin-x"&gt;&lt;/i&gt;</code>
+                </div>
+
+                <div class="col-sm-3 col-md-2">
+                    <span class="nep nep-khukuri-cross nep-4x spin-y"></span><br/>
+                    <code>&lt;i class="nep nep-khukuri-cross spin-y"&gt;&lt;/i&gt;</code>
+                </div>
+
+                <div class="col-sm-3 col-md-2">
+                    <span class="nep nep-ebl nep-4x spin-z"></span><br/>
+                    <code>&lt;i class="nep nep-ebl spin-z"&gt;&lt;/i&gt;</code>
+                </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <small> Available class form spin animation :</small><br/>
+                  <code>spin-x</code> <code>spin-y</code> <code>spin-z</code>
+              </div>
+          </div>
+          
+          <footer class="footer">
+              <div class="row">
+                    <p>Made in <i class="nep nep-flag red middle"></i> &copy; 2016 Nep Icon Fonts.</p>
+              </div>
+          </footer>
+
+        </div><!-- icon container ends -->
+    </div><!-- main container ends-->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+    </script>
   </body>
 </html>
